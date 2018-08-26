@@ -1,7 +1,7 @@
 {
   "baseURI": "kylindev.com",
   "runtime": "local",
-  "port": 80,
+  "port": 8080,
   "httpServer": {
     "host": "www.easy-mock.com",
     "port": 443
