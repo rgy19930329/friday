@@ -8,7 +8,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "start": "cross-env NODE_ENV=dev node @kyserver/www",
-    "boot": "cross-env NODE_ENV=dev supervisor node @kyserver/www"
+    "boot": "cross-env NODE_ENV=dev supervisor node @kyserver/www",
+    "prod-test": "cross-env NODE_ENV=product node @kyserver/www"
   },
   "dependencies": {
     "assert": "^1.4.1",
