@@ -1,10 +1,11 @@
 <template>
   <div id="app">
     <template v-if="isDone">
+      <img alt="Vue logo" src="./assets/logo.png">
       <router-view></router-view>
     </template>
     <template v-else>
-      config loading...
+      loading...
     </template>
   </div>
 </template>
@@ -40,6 +41,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 30px;
+  padding: 20px;
 }
 </style>

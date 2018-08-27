@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-    <img alt="Vue logo" src="../assets/logo.png">
     <p>
       For guide and recipes on how to configure / customize this project,<br>
       check out the
