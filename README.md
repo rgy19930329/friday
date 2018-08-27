@@ -14,6 +14,4 @@ npm run boot
 
 ## 部署
 
-npm run build
-
-pm2 start ua.json
+./deploy.sh
