@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <template v-if="isDone">
-      <img alt="Vue logo" src="./assets/logo.png">
+      <img alt="Vue logo" src="./assets/logo.png" class="logo">
       <router-view></router-view>
     </template>
     <template v-else>
@@ -34,7 +34,7 @@ export default {
 }
 </script>
 
-<style>
+<style rel="stylesheet/less" lang="less">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -43,5 +43,13 @@ export default {
   color: #2c3e50;
   margin-top: 30px;
   padding: 20px;
+
+  .logo {
+    width: 100px;
+  }
+
+  .ivu-icon {
+    font-size: 20px;
+  }
 }
 </style>

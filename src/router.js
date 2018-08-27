@@ -6,6 +6,7 @@ Vue.use(Router);
 import HelloWorld from './components/HelloWorld.vue';
 import T1 from './components/T1.vue';
 import T2 from './components/T2.vue';
+import T3 from './components/T3.vue';
 
 export default new Router({
   routes: [
@@ -14,15 +15,20 @@ export default new Router({
       path: '/',
       component: HelloWorld
     },
-    { // t1
+    { 
       name: 't1',
       path: '/t1',
       component: T1
     },
-    { // t2
+    {
       name: 't2',
       path: '/t2',
       component: T2
+    },
+    {
+      name: 't3',
+      path: '/t3',
+      component: T3
     }
   ]
 });

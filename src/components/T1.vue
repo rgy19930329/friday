@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="page-t1">
     <h1>{{ msg }}</h1>
     <h2>{{ title }}</h2>
     <ul>

@@ -1,13 +1,17 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+import '../public/libs';
+import 'iview/dist/styles/iview.css';
 
-import router from './router'
+import iview from 'iview';
+// import { Button } from 'iview';
+// Vue.component('Button', Button);
+Vue.use(iview);
 
-import '../public/libs'
-
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 new Vue({
   render: h => h(App),
   router,
-}).$mount('#app')
+}).$mount('#app');

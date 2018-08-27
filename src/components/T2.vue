@@ -1,6 +1,6 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div class="page-t2">
+    <h1>{{ title }}</h1>
     <c-table :thead="['name', 'url', 'address', 'string']" :list="list">
       <tr slot-scope="props">
         <td>{{ props.item.name }}</td>
@@ -17,7 +17,7 @@ export default {
   name: 't2',
   data() {
     return {
-      msg: 'MockData Test',
+      title: 'MockData Test',
       list: [],
     }
   },
