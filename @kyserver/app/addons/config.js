@@ -16,9 +16,9 @@ const envMap = {
 
 const isLocal = !envMap[process.env.NODE_ENV];
 
-async function config() {
+const config = async () => {
   if(isLocal) {
-    var localConfig = require(path.join(KY.appDir, '/app/config'));
+    let localConfig = require(path.join(KY.appDir, '/app/config'));
     return new Promise((resolve, reject) => {
       KY.config = localConfig;
       KY.logger(KY.config, 'config');
@@ -26,19 +26,19 @@ async function config() {
     });
   }
 
-  var options = {
+  let options = {
     hostname: 'www.easy-mock.com', 
     port: 443,
     path: '/mock/5ad07a89909da41e79f4a8a3/example/config',
     method: 'get'
   }
 
-  var protocol = options.port === 443 ? https : http;
+  let protocol = options.port === 443 ? https : http;
 
   return new Promise((resolve, reject) => {
-    var paramStr = querystring.stringify({});
-    var req = protocol.request(options, function(res) {
-      var json = '';
+    let paramStr = querystring.stringify({});
+    let req = protocol.request(options, function(res) {
+      let json = '';
       res.on('data', function(chunk) {
         json += chunk;
       });

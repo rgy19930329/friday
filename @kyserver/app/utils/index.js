@@ -2,10 +2,10 @@
  * @desc 延迟方法
  * @param ms {number}
  */
-const sleep = async (ms) => {
+const sleep = async (ms, data) => {
   return new Promise(resolve => {
     setTimeout(() => {
-      resolve(true)
+      resolve(data)
     }, ms)
   })
 }

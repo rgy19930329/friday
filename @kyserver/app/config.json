@@ -5,5 +5,6 @@
   "httpServer": {
     "host": "www.easy-mock.com",
     "port": 443
-  }
+  },
+  "mongodbServer": "mongodb://localhost:27017/testdb"
 }
