@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="[$route.name + '-wrap', 'app']">
     <template v-if="isDone">
       <img alt="Vue logo" src="./assets/logo.png" class="logo">
       <router-view></router-view>
@@ -41,6 +41,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+.app {
   margin-top: 30px;
   padding: 20px;
 

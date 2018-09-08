@@ -4,8 +4,12 @@ const save = async (subject) => {
   return await Subject.create(subject);
 };
 
-const find = async (conditions) => {
-  return await Subject.find(conditions || {});
+const find = async (...conditions) => {
+  return await Subject.find(...conditions);
+};
+
+const count = async () => {
+  return await Subject.countDocuments();
 };
 
 const update = async (conditions, update) => {
@@ -19,6 +23,8 @@ const remove = async (conditions) => {
 module.exports = {
   save,
   find,
+  count,
   update,
-  remove
+  remove,
+  Subject
 }

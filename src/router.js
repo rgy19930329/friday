@@ -7,10 +7,11 @@ import HelloWorld from './components/HelloWorld.vue';
 import T1 from './components/T1.vue';
 import T2 from './components/T2.vue';
 import T3 from './components/T3.vue';
+import Friday from './components/Friday.vue';
 
 export default new Router({
   routes: [
-    { // index
+    { 
       name: 'index',
       path: '/',
       component: HelloWorld
@@ -29,6 +30,11 @@ export default new Router({
       name: 't3',
       path: '/t3',
       component: T3
+    },
+    {
+      name: 'friday',
+      path: '/friday',
+      component: Friday
     }
   ]
 });

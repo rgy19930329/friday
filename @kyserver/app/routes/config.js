@@ -6,7 +6,7 @@ KY.onGet('/config', async (ctx) => {
     runtime
   } = KY.config;
 
-  await sleep(2000);
+  await sleep(300);
 
   ctx.send( { baseURI, runtime } );
 });

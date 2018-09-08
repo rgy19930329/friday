@@ -1,10 +1,15 @@
-const { subjects } = require('../../model'); 
+const { subjects } = require('../../model');
 
 KY.onGet('/api/subjects/list', async (ctx) => {
-  const data = await subjects.find();
+  const params = ctx.request.query;
+  const curr = parseInt(params.curr || 1) - 1;
+  const size = parseInt(params.size || 10);
+  const data = await subjects.find({}, null, { skip: curr * size, limit: size });
+  const total = await subjects.count();
   ctx.send({
     success: true,
     data: data,
+    total: total,
   });
 });
 
