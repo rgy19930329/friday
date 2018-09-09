@@ -24,6 +24,7 @@
     "mongoose": "^5.2.13",
     "querystring": "^0.2.0",
     "vue": "^2.5.17",
+    "vue-pull-to": "^0.1.6",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
@@ -37,7 +38,7 @@
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
-    "root": true,
+    "root": false,
     "env": {
       "node": true
     },
@@ -45,7 +46,9 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "no-console": "off"
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
