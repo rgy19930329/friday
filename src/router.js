@@ -9,6 +9,7 @@ import T2 from './components/T2.vue';
 import T3 from './components/T3.vue';
 import Friday from './components/Friday.vue';
 import MFriday from './components/MFriday.vue';
+import Emoticon from './components/Emoticon.vue';
 
 export default new Router({
   routes: [
@@ -41,6 +42,11 @@ export default new Router({
       name: 'mfriday',
       path: '/mfriday',
       component: MFriday
+    },
+    {
+      name: 'emoticon',
+      path: '/emoticon',
+      component: Emoticon,
     }
   ]
 });
