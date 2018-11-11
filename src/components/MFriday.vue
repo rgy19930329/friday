@@ -5,9 +5,9 @@
       <div>
         <Card dis-hover v-for="(item, index) in list" :key="index" style="margin: 10px 0">
           <Row>
-            <Col span="8"><img :src="item.cover" /></Col>
-            <Col span="8"><a :href="item.url" target="_blank">{{ item.title }}</a></Col>
-            <Col span="8">{{ item.rate }}</Col>
+            <Col span="6"><img :src="item.cover" /></Col>
+            <Col span="12" style="text-align: left;"><a :href="item.url" target="_blank">{{ item.title }}</a></Col>
+            <Col span="6">{{ item.rate }}</Col>
           </Row>
         </Card>
       </div>
